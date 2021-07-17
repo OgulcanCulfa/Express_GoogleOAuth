@@ -3,9 +3,7 @@ const passport = require("passport");
 const verifyAuth = require("../middlewares/authentications/verifyAuth");
 
 router.get("/", (req, res) => {
-  res.render("index.hbs", {
-    name: "Ogulcan",
-  });
+  res.render("index.hbs");
 });
 
 router.get("/failed", (req, res) => {
